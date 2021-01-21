@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Label?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.241" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="application.scene6.PageInfoEntrepriseController" >
+   <top>
+      <Pane prefHeight="419.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="label1" layoutX="100" layoutY="150"  />         
+        	<Label fx:id="label2" layoutX="100" layoutY="100"  />  
+            <TextArea fx:id="infosEntreprise" layoutX="14.0" layoutY="15.0" prefHeight="371.0" prefWidth="573.0" />
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

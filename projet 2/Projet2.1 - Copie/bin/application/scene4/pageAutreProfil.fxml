@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+
+
+
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.241" xmlns:fx="http://javafx.com/fxml/1"
+ fx:controller="application.scene4.PageAutreProfilController">
+   <center>
+      <Pane prefHeight="400.0" prefWidth="609.0" BorderPane.alignment="CENTER">
+         <children>
+         
+            <Text layoutX="40.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rechercher Profil :" wrappingWidth="186.13670349121094">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="nomLabel" layoutX="40.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom :" wrappingWidth="142.2375602722168"/>           
+            <Label fx:id="label" layoutX="75.0" layoutY="7.0" text="Label" />
+            <TextField fx:id="nom" layoutX="104.0" layoutY="102.0" prefHeight="25.0" prefWidth="100.0" />
+            <Text layoutX="20.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nom prénom :" wrappingWidth="76.80340194702148" />
+            <TextField fx:id="prenom" layoutX="250.0" layoutY="102.0" prefHeight="25.0" prefWidth="100" />
+            <Button onAction="#rechercheViaNom" layoutX="417.0" layoutY="102.0" mnemonicParsing="false" text="Rechercher" />
+            <Text layoutX="20.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="entreprise :" wrappingWidth="76.80340194702148" />
+            <TextField fx:id="entreprise" layoutX="104.0" layoutY="179.0" prefHeight="25.0" prefWidth="250.0" />
+            <Button onAction="#rechercheViaEntreprise" layoutX="417.0" layoutY="179.0" mnemonicParsing="false" text="Rechercher" />
+            <Text layoutX="47.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="21.333309173583984" />
+         	<Button onAction="#retour" layoutX="450.0" layoutY="365.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Retour"/>
+         	<Label fx:id="errorLabel" layoutX="100.0" layoutY="250.0" > </Label>
+            <Label fx:id="errorLabel2" layoutX="100.0" layoutY="300.0" > </Label>
+            
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
